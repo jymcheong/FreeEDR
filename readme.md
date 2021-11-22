@@ -1,0 +1,1 @@
+See https://github.com/jymcheong/OpenEDR/blob/master/readme.md
