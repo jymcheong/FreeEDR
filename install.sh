@@ -110,7 +110,7 @@ echo $SFTP_IP > ./backend/sftp/IPaddresses
 sudo $COMPOSECMD up -d
 
 #MSG="\$SFTPCONFURL='http://$SFTP_IP:$SFTPCONF_PORT/sftpconf.zip'; Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/jymcheong/openedrClient/master/install.ps1'))"
-MSG="start-process -verb runas -Filepath powershell -ArgumentList \"-ExecutionPolicy Bypass\", '-Command \"\$SFTPCONFURL=''http://$SFTP_IP:$SFTPCONF_PORT/sftpconf.zip'';[scriptblock]::Create((New-Object System.Net.WebClient).DownloadString(''https://raw.githubusercontent.com/jymcheong/openedrClient/master/install.ps1'')).Invoke();pause;\"'"
+MSG="start-process -verb runas -Filepath powershell -ArgumentList \"-ExecutionPolicy Bypass\", '-Command \"\$SFTPCONFURL=''http://$SFTP_IP:$SFTPCONF_PORT/sftpconf.zip'';[scriptblock]::Create((New-Object System.Net.WebClient).DownloadString(''https://raw.githubusercontent.com/jymcheong/FreeEDR-agents/main/install.ps1'')).Invoke();pause;\"'"
 echo '# Copy the following & run from powershell session to install host agents:<br>' > ./clientconf/index.html
 echo $MSG >> ./clientconf/index.html
 
