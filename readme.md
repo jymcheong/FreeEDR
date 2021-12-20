@@ -5,7 +5,7 @@ Click thumbnail below to watch:
 
 # Getting Started
 
-**Please use official docker installers for respective OSes stated in the diagram below.** [Installation script](https://github.com/jymcheong/FreeEDR#installation-steps) will prompt for selection of 2 IP addresses for SFTP & FRONTEND access.
+**Please setup docker with official docker installers for respective OSes first.** [Installation script](https://github.com/jymcheong/FreeEDR#installation-steps) will prompt for selection of 2 IP addresses for SFTP & FRONTEND access.
 
 ![directInstallation](directInstallation.png)
 
